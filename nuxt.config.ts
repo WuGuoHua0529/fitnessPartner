@@ -5,5 +5,10 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@element-plus/nuxt'
   ],
+  //全局css
+  css: [
+    "@/assets/scss/app.scss",
+    "@/assets/scss/_element-variables.scss",
+  ],
   elementPlus: { /** Options */ }
 })
