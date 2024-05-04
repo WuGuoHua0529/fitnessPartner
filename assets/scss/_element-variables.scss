@@ -1,3 +1,31 @@
 .el-header {
   padding: 0px !important;
 }
+
+.base_dialog {
+  height: 70vh;
+  padding: 0 !important;
+  border-radius: 1.5rem !important;
+
+  .el-dialog__body {
+    border-radius: 1.5rem !important;
+  }
+
+  .el-dialog__header {
+    display: none;
+  }
+}
+
+.el-collapse-item__header {
+  color: white !important;
+  background-color: transparent !important;
+  padding: 10px !important;
+}
+
+.el-collapse-item__wrap {
+  background-color: transparent !important;
+}
+
+.el-collapse-item__content {
+  color: white !important;
+}

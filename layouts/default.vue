@@ -20,12 +20,18 @@
             index="4"
             @click="nextMenu"
           >飲食安排</el-menu-item>
-          <el-menu-item index="1">我的夥伴</el-menu-item>
+          <el-menu-item
+            index="1"
+            @click="nextMenu"
+          >我的夥伴</el-menu-item>
           <el-menu-item
             index="2"
             @click="nextMenu"
           >訓練安排</el-menu-item>
-          <el-menu-item index="3">登入</el-menu-item>
+          <el-menu-item
+            index="3"
+            @click="nextMenu"
+          >登入</el-menu-item>
         </el-menu>
       </el-header>
       <el-main>
@@ -56,8 +62,14 @@ const nextMenu = (event) => {
     case '4':
       router.push({ name: 'arrange' })
       break;
+    case '1':
+      router.push({ name: 'partner' })
+      break;
     case '2':
       router.push({ name: 'train' })
+      break;
+    case '3':
+      router.push({ name: 'register' })
       break;
   }
 }
